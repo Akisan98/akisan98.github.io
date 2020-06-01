@@ -1,0 +1,557 @@
+:root {
+  --text-color: white;
+  --text-color-alt: #A64949;/*#007bff;*/
+  --transition-time: .8s;
+
+  /* --color1: #021D40; /* #3C5973; */
+  /* --color2: #050D00; /* #3F403B; */
+  /* --color3: #3F403B; /* #BFBFBA; */
+  /* --color4: #BFBFBA; /* #737166; */
+  /* --color5: #737166; /* #0D0D0D; */
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+    scroll-behavior: smooth;
+    color: var(--text-color);
+}
+
+/* Hero Content */
+
+#name{
+  top: 100px;
+  left: 50%;
+  color: #A64949;
+  font-size: 115px;
+  font-weight: 700;
+  font-style: italic;
+  position: relative;
+  transition: var(--transition-time);
+}
+
+
+#skills{
+  top: 100px;
+  left: 60%;
+  font-size: 2.2rem;
+  font-weight: 800;
+  position: relative;
+  transition: var(--transition-time);
+}
+
+
+.button-placement{
+  top: 120px;
+  left: 68%;
+  position: relative;
+  transition: var(--transition-time);
+}
+
+.button-placement button{
+  border: 3.5px solid #A64949;
+  background-color: transparent;
+  color: white;
+  padding: 1.8%;
+  padding-right: 5%;
+  padding-left: 5%;
+  font-weight: 700;
+  transition: var(--transition-time);
+}
+
+.button-placement button:hover{
+  border: 3.5px solid #A64949;
+  background-color: #A64949;
+  color: white;
+  padding: 1.8%;
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+/*#intro1{
+  display: none;
+}*/
+
+.center{ text-align: center; }
+
+.navbar-dark{
+  background-color: transparent;
+  z-index: 1000;
+}
+
+
+.heroImage{
+  height: 100vh;
+  min-height: 400px;
+  background-position: 10%;
+  background-size: cover;
+  background-image:  linear-gradient(to left, rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.0)), url('https://akisan98.github.io/photos/skateboard.webp');
+  /*linear-gradient(to top left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)), linear-gradient(to bottom left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0)),*/
+  overflow: hidden;
+}
+
+#about_section{
+  background-color: #2C2D29; 
+  overflow: hidden; 
+  padding: 5%
+}
+
+#skill_section{
+  background-color: #504F47; 
+  overflow: hidden; 
+  padding: 5%
+}
+
+.progress{
+  height: 1.4rem;
+}
+
+/* PROGESS BAR % */
+#java_progress{
+  width: 90%;
+}
+#python_progess{
+  width: 85%;
+}
+#SQL_progess{
+  width: 70%;
+}
+#HTML_progess{
+  width: 65%;
+}
+#UI_progess{
+  width: 55%;
+}
+#Prototype_progess{
+  width: 50%;
+}
+#C_progess{
+  width: 50%;
+}
+#Assembler_progess{
+  width: 40%;
+}
+#Bash_progess{
+  width: 40%;
+}
+
+
+
+
+.subheader{
+  font-size: 2.5rem;
+}
+
+
+
+
+
+/* Arrow */
+.arrow-placement{
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: var(--transition-time);
+}
+
+.down-arrow {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  border: solid var(--text-color);
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 12px;
+  align-self: center;
+  transition: var(--transition-time);
+}
+
+.down-arrow:hover{
+  border: solid var(--text-color-alt);
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+}
+
+.bounce-arrow {
+  text-align: center;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(18px);
+    }
+  }
+
+.barDiscription{}
+
+/* FOOTER */
+
+#footer{
+  background-color: #2C2D29;
+  padding: min(5%, 30px);
+}
+
+.grey-text{
+  color: gray;
+}
+
+/* LINKS / Menu */
+.footer_link {
+  font-size: 1rem;
+  display: inline-block;
+  color: var(--text-color);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ /*position: relative;*/
+  /*width: min(25%, 400px);*/
+
+  /* MATCHING NAVBAR */
+  font-weight: 700!important;
+  text-transform: uppercase!important;
+  /*padding: .5rem 1rem;*/
+  text-decoration: none;
+  transition: var(--transition-time);
+
+}
+
+.footer_link:hover{
+  text-decoration: none;
+  color: var(--text-color-alt);
+}
+
+.fa2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+
+
+/* W3Schools - Social Media Buttons */
+.fa {
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: var(--text-color);
+  transition: var(--transition-time);
+  font-display: swap
+}
+.fa-github {
+  background: #6e5494;
+  color: var(--text-color);
+  transition: var(--transition-time);
+  font-display: swap
+}
+.fa-facebook {
+  background: #3B5998;
+  color: var(--text-color);
+  transition: var(--transition-time);
+  font-display: swap
+}
+.fa-envelope{
+  background: #495057;
+  color: var(--text-color);
+  transition: var(--transition-time);
+  font-display: swap
+}
+/* On Hover */
+.fa-linkedin:hover{
+  background: var(--text-color);
+  color: #007bb5;
+  text-decoration: none;
+}
+.fa-github:hover{
+  background: var(--text-color);
+  color: #6e5494;
+  text-decoration: none;
+}
+.fa-facebook:hover{
+  background: var(--text-color);
+  color: #3B5998;
+  text-decoration: none;
+}
+.fa-envelope:hover{
+  background: var(--text-color);
+  color: #495057;
+  text-decoration: none;
+}
+
+
+
+.fa-laptop{
+  font-size: 50px;
+  color: #A64949;
+  text-decoration: none;
+  display: inline-table;
+}
+
+.fa-server{
+  font-size: 50px;
+  color: #A64949;
+  text-decoration: none;
+  display: inline-table;
+}
+
+.fa-pencil{
+  font-size: 50px;
+  color: #A64949;
+  text-decoration: none;
+  display: inline-table;
+}
+
+.fa-play{
+  font-size: 20px;
+  width: 60px;
+  background: white;
+  color: black;
+  transition: var(--transition-time);
+  font-display: swap;
+  margin-right: 30px;
+}
+
+
+
+.cardShadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  background-color: #2C2D29;
+  /*width: 80vw;*/
+  padding: 5%;
+  border-radius: 10px;
+}
+
+#cardCenter{
+  border-left: 1px solid #504F47; border-right: 1px solid #504F47;
+}
+
+@media screen and (max-width: 767px) {
+  #cardCenter{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    border: none;
+    border-top: 1px solid #504F47; border-bottom: 1px solid #504F47;
+    
+  }
+  #lastCard{
+    padding-top: 5%;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (max-height: 429px) { .arrow-placement{ display: none; } }
+@media screen and (max-height: 460px) and (max-width: 575px){
+  .arrow-placement{ display: none; }
+}
+
+
+@media screen and (max-height: 529px) and (max-width: 575px){
+  #brandIcon { height: 50px; width: 50px; }
+  #name{
+    top: 10px;
+    left: 20px;
+    font-size: 5rem;
+  }
+  
+  #skills{
+    font-size: 1.2rem;
+    top: 0px;
+    left: 50px;
+  }
+
+  .button-placement{
+    top: 30px;
+    left: 40%;
+  }
+
+  .arrow-placement{
+    top: 85%;
+  }
+
+}
+
+@media screen and (max-height: 529px) and (min-width: 576px){
+  #brandIcon { height: 50px; width: 50px; }
+
+  #name{
+    top: 10px;
+    left: 0px;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  #skills{
+    font-size: 1.2rem;
+    top: 0px;
+    left: 0px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .button-placement{
+    top: 0px;
+    left: 60%;
+  }
+
+}
+
+
+@media screen and (max-width: 991px) and (min-height: 530px) {
+  /*.heroImage_container {
+      padding-top: 300px;
+      padding-left: 50px;
+      top: 37%;
+      left: 50%;
+      position: relative;;
+  }*/
+
+  #brandIcon {
+      height: 50px;
+      width: 50px;
+  }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1050px) and (min-height: 530px) {
+  #skills{ top: 100px; left: 480px; }
+  .button-placement{ left: 500px; }
+}
+
+@media screen and (min-width: 960px) and (max-width: 991px) and (min-height: 530px) {
+  #skills{ top: 100px; left: 300px; }
+  .button-placement{ left: 400px; }
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 960px) and (min-height: 530px) {
+  #name{
+    left: 50px;
+    top: 50px;
+    font-size: 6rem;
+  }
+
+  #skills{
+    font-size: 1.6rem;
+    top: 50px;
+    left: 100px;
+  }
+
+  .button-placement{
+    top: 80px;
+    left: 120px;
+  }
+}
+
+
+@media screen and (max-width: 500px) and  (min-width: 350px) and (min-height: 530px) {
+  
+  /*#intro1{
+    font-size: 2.7rem;
+    position: relative;
+    left: 20px;
+    top: 45px;
+  }*/
+
+  #name{
+    left: 20px;
+    top: 40px;
+    font-size: 5rem;
+    position: relative;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  #skills, .button-placement{
+    top: 40px;
+    left: 40px;
+    font-size: 1.4rem;
+    position: relative;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .button-placement{ top: 80px; font-size: 1rem; }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 349px) and (min-height: 429px){
+  #name{
+    top: 20px;
+    left: 25px;
+    font-size: 3.5rem;
+    position: relative;
+  }
+
+  #skills, .button-placement{
+    top: 0px;
+    left: 40px;
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .button-placement{ top: 30px; }
+  .arrow-placement{ top: 85%; }
+}
+
+@media screen and (min-width: 229px) and (max-width: 299px) {
+  #name{
+    top: 20px;
+    left: auto;
+    font-size: 3rem;
+  }
+
+  #skills, .button-placement{
+    top: 0px;
+    left: 12px;
+    font-size: 1rem;
+  }
+
+  .arrow-placement{
+    top: 85%;
+  }
+}
+
+/* UnSupported Sizes */
+@media screen and (max-width: 229px) {
+  #name, #skills, .button-placement {
+    all: unset;
+  }
+
+  .arrow-placement{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 399px) and (max-height: 529px) { 
+  #name, #skills, .button-placement{
+    all: unset;
+  }
+  .arrow-placement{
+    display: none;
+  }
+}
+
+
+/* From BootStrap 4 - Copied to minimize network calls */ /* <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> */
